@@ -2350,3 +2350,23 @@ footer p {
     max-width: 98vw;
   }
 }
+@media (max-width: 700px) {
+  .spa-section .invitation-text {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 8px !important;
+  }
+  .spa-section {
+    padding-top: 0 !important;
+  }
+}
+@media (max-width: 480px) {
+  .spa-section .invitation-text {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .spa-section {
+    padding-top: 0 !important;
+  }
+}
