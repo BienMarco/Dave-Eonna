@@ -1,7 +1,7 @@
 /* Base Styles */
 :root {
     --primary-color: #A1BFDD; /* Light Blue */
-    --secondary-color: #7A9BC4; /* Medium Blue */
+    --secondary-color: #A1BFDD; /* Medium Blue */
     --accent-color: #ffffff; /* White */
     --text-color: #1f2a34; /* Dark slate for contrast */
     --light-text: #6c7a86;
@@ -228,7 +228,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(161, 191, 221, 0.8);
+    background-color: rgba(161, 191, 221, 0.8); /* Updated to match #A1BFDD */
     z-index: 1;
 }
 
@@ -252,7 +252,7 @@ a {
 }
 
 .nav-brand-logo {
-    height: 48px;
+    height: 60px;
     width: auto;
     display: block;
     margin: 0;
@@ -280,7 +280,7 @@ a {
 }
 
 .nav-links a:hover {
-    color: #A1BFDD;
+    color: var(--secondary-color);
 }
 
 .nav-links a::after {
@@ -290,7 +290,7 @@ a {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #A1BFDD;
+    background-color: var(--secondary-color);
     transition: width 0.3s ease;
 }
 
@@ -840,7 +840,7 @@ footer::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(161, 191, 221, 0.8);
+    background-color: rgba(161, 191, 221, 0.8); /* Updated to match #A1BFDD */
     z-index: 1;
 }
 
@@ -865,7 +865,7 @@ footer p {
 }
 
 .footer-links a:hover {
-    color: #A1BFDD;
+    color: var(--secondary-color);
 }
 
 .copyright {
@@ -1241,8 +1241,7 @@ footer p {
 }
 @media (max-width: 600px) {
     .hero-content {
-        padding-top: 90px;
-        padding-bottom: 16px;
+        padding: 4vh 4vw 0 4vw !important;
         max-width: 100vw;
     }
     .countdown {
@@ -1319,7 +1318,7 @@ footer p {
   right: 32px;
   z-index: 1000;
   background: rgba(255,255,255,0.92);
-  border: 2.5px solid var(--primary-color);
+  border: 2.5px solid var(--secondary-color);
   border-radius: 50%;
   width: 56px;
   height: 56px;
@@ -1674,7 +1673,7 @@ footer p {
   .hero-content {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
-    padding-top: 32px !important;
+    padding-top: 24px !important;
     height: auto !important;
     min-height: 0 !important;
   }
@@ -2320,5 +2319,34 @@ footer p {
   .attire-images .attire-img {
     height: 280px !important;
     aspect-ratio: 3/4 !important;
+  }
+}
+@media (max-width: 700px) {
+  .splash-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 72px !important;
+    line-height: 1.1;
+  }
+  .splash-button {
+    padding: 18px 0;
+    width: 100%;
+    max-width: 90vw;
+    overflow-wrap: break-word;
+    margin-bottom: 10px !important;
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .splash-names {
+    font-size: 48px !important;
+  }
+  .splash-and {
+    font-size: 2.3rem;
+  }
+  .splash-hashtag {
+    font-size: 0.8rem !important;
+    max-width: 98vw;
   }
 }
