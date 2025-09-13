@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.history.replaceState(null, null, window.location.pathname);
     }
     
-    // Hero slideshow background
+    // Hero slideshow background with fade effect
     (function() {
         const images = [
             'assets/images/JUN00079.jpg',
@@ -311,13 +311,26 @@ document.addEventListener('DOMContentLoaded', function() {
         let current = 0;
         const slideshow = document.querySelector('.hero-slideshow');
         if (!slideshow) return;
+        
+        // Create slide elements
+        images.forEach((src, index) => {
+            const slideDiv = document.createElement('div');
+            slideDiv.className = 'slide-bg';
+            slideDiv.style.backgroundImage = `url('${src}')`;
+            if (index === 0) slideDiv.classList.add('active');
+            slideshow.appendChild(slideDiv);
+        });
+        
         // Preload images
         images.forEach(src => { const img = new Image(); img.src = src; });
+        
         function showNext() {
-            slideshow.style.backgroundImage = `url('${images[current]}')`;
+            const slides = slideshow.querySelectorAll('.slide-bg');
+            slides[current].classList.remove('active');
             current = (current + 1) % images.length;
+            slides[current].classList.add('active');
         }
-        showNext();
+        
         setInterval(showNext, 3000);
     })();
     
@@ -334,7 +347,7 @@ document.addEventListener('DOMContentLoaded', function() {
         changeSlide(1);
     }, 4000);
     
-    // Gallery Background Slideshow (similar to hero slideshow)
+    // Gallery Background Slideshow with fade effect
     (function() {
         const galleryImages = [
             'assets/images/JUN00079.jpg',
@@ -378,16 +391,25 @@ document.addEventListener('DOMContentLoaded', function() {
         const gallerySlideshow = document.querySelector('.gallery-slideshow-bg');
         if (!gallerySlideshow) return;
         
+        // Create slide elements
+        galleryImages.forEach((src, index) => {
+            const slideDiv = document.createElement('div');
+            slideDiv.className = 'slide-bg';
+            slideDiv.style.backgroundImage = `url('${src}')`;
+            if (index === 0) slideDiv.classList.add('active');
+            gallerySlideshow.appendChild(slideDiv);
+        });
+        
         // Preload images
         galleryImages.forEach(src => { const img = new Image(); img.src = src; });
         
         function showNextGallery() {
-            gallerySlideshow.style.backgroundImage = `url('${galleryImages[currentGallery]}')`;
+            const slides = gallerySlideshow.querySelectorAll('.slide-bg');
+            slides[currentGallery].classList.remove('active');
             currentGallery = (currentGallery + 1) % galleryImages.length;
+            slides[currentGallery].classList.add('active');
         }
         
-        // Start the gallery background slideshow
-        showNextGallery();
         setInterval(showNextGallery, 3000);
     })();
 });
