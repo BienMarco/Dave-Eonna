@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon Dave & Eonna</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen">
+        <div class="splash-overlay"></div>
+        <div class="splash-content">
+            <h1>Jhon Dave & Eonna</h1>
+            <p class="splash-hashtag">#DAVEginningOfForeverWithEonna</p>
+            <button id="enterSite" class="splash-button">You're Invited</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="index.html" class="nav-brand"><img src="assets/images/logo.png" alt="Logo" class="nav-brand-logo"></a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-icon-link active"><span class="nav-icon-circle"><i class="fas fa-home"></i></span></a></li>
+                    <li><a href="#story" class="nav-icon-link"><span class="nav-icon-circle"><i class="fas fa-ring"></i></span></a></li>
+                    <li><a href="#details" class="nav-icon-link"><span class="nav-icon-circle"><i class="fas fa-map-marker-alt"></i></span></a></li>
+                    <li><a href="#gallery" class="nav-icon-link"><span class="nav-icon-circle"><i class="fas fa-heart"></i></span></a></li>
+                    <li><a href="#entourage-invite" class="nav-icon-link"><span class="nav-icon-circle"><i class="fas fa-users"></i></span></a></li>
+                    <li><a href="#rsvp" class="nav-icon-link"><span class="nav-icon-circle"><i class="fas fa-envelope-open-text"></i></span></a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section (Home) -->
+        <section id="home" class="spa-section">
+            <div class="hero-slideshow"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Jhon Dave & Eonna</h1>
+                <p class="date">December 14, 2025</p>
+                <p class="subtitle">Garden Wedding • 4:00 PM • Via Elise Event Center</p>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <span>Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <span>Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <section class="invitation-text">
+                <h2>Together with their families</h2>
+                <h1>Jhon Dave H. Tumbaga</h1>
+                <p class="and">&</p>
+                <h1>Eonna A. Raganas</h1>
+                <p>request the pleasure of your company</p>
+                <p>as they exchange vows and begin their new life together</p>
+                <p class="date-time">December 14, 2025 • 4:00 PM</p>
+                <p class="venue">Via Elise Event Center, Brgy. Butong, Taal, Batangas</p>
+            </section>
+        </section>
+        <!-- Story Section -->
+        <section id="story" class="spa-section" style="display:none;">
+            <div class="container">
+                <div class="story-content">
+
+                    <div class="story-images">
+                        <img src="assets/images/JUN00588.jpg" alt="Eonna and Jhon Dave" style="margin-bottom:16px;">
+                        <img src="assets/images/YRB03263.jpg" alt="Eonna and Jhon Dave">
+                    </div>
+                    <div class="story-text">
+                        <h2 class="story-title">Our Story</h2>
+                        <p>It began in the soft glow of high school days, when she came to me—not for love, but to speak of another who sought her heart. Fate has a quiet sense of humor—for though I knew his name, it was hers I would never forget.</p>
+                        <p>She was talkative, full of energy and life. I was the calm one—a listener, drawn to the warmth of her voice. Somehow, we just fit—two opposites dancing in perfect rhythm.</p>
+                        <p>As time passed, something deeper began to grow between us. A feeling that started as a spark soon rooted itself quietly in my heart… and in hers too.</p>
+                        <p>When I finally found the courage to tell her how I felt, she welcomed it with open arms and a joyful heart. That was the beginning of a new chapter—one filled with love, laughter, and shared dreams.</p>
+                        <p>Now, after ten beautiful years together, we stand once more on the edge of something new. Another chapter is glancing our way, and I know, with all my heart, I want to keep writing this story—with her, forever.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Details Section -->
+        <section id="details" class="spa-section" style="display:none;">
+            <section class="details-section">
+                <div class="container">
+                    <!-- Venues Section -->
+                    <section class="venues-section">
+                        <h2 class="venues-title">Venues</h2>
+                        <div class="venues-grid">
+                            <div class="venue-card">
+                                <img src="assets/images/church.png" alt="Garden Wedding Ceremony" class="venue-img brush-img">
+                                <div class="venue-info">
+                                    <div class="venue-name">Garden Wedding Ceremony</div>
+                                    <div class="venue-address">(Garden Wedding) Via Elise</div>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Via+Elise+Event+Center+Brgy.+Butong,+Taal,+Batangas" class="venue-btn" target="_blank" rel="noopener">Open in Maps</a>
+                                </div>
+                            </div>
+                            <div class="venue-card">
+                                <img src="assets/images/reception.png" alt="Reception" class="venue-img brush-img">
+                                <div class="venue-info">
+                                    <div class="venue-name">Reception</div>
+                                    <div class="venue-address">Via Elise Events Center</div>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Via+Elise+Event+Center+Brgy.+Butong,+Taal,+Batangas" class="venue-btn" target="_blank" rel="noopener">Open in Maps</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Attire Section -->
+                    <div class="attire-section">
+                        <h3>Attire</h3>
+                        <p style="margin:8px 0 18px 0;">Dress Code: Semi-formal to Formal</p>
+                        <div class="attire-images">
+                            <div style="display:flex;flex-direction:column;align-items:center;">
+                                <img src="assets/images/attire-boy.jpg" alt="Attire for Men" class="attire-img">
+                                <span class="attire-label">For Men</span>
+                            </div>
+                            <div style="display:flex;flex-direction:column;align-items:center;">
+                                <img src="assets/images/dress.jpg" alt="Attire for Women" class="attire-img">
+                                <span class="attire-label">For Women</span>
+                            </div>
+                        </div>
+                        <div class="attire-pastels">
+                            <div class="pastel-circle" style="background:#a1bfdd;border:2px solid #eee;">
+                                <span class="color-tooltip">Dusty Blue</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Gift Note Section -->
+                        <div class="gift-note-section" style="margin-top: 40px; text-align: center; padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+                            <h3 style="margin-bottom: 20px; color: #333; font-family: 'Playfair Display', serif;">Gift Note</h3>
+                            <p style="line-height: 1.6; color: #555; font-size: 16px; margin-bottom: 20px;">
+                                With all that we have, we've been truly blessed. Your presence and prayers are all that we request. But if you desire to give nonetheless, monetary gift is one we humbly request.
+                            </p>
+                            <p style="color: #666; font-size: 14px; font-style: italic;">
+                                Facebook messenger or RSVP
+                            </p>
+                        </div>
+                        
+                        <!-- Unplugged Ceremony Section -->
+                        <div class="unplugged-ceremony-section" style="margin-top: 30px; text-align: center; padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+                            <h3 style="margin-bottom: 20px; color: #333; font-family: 'Playfair Display', serif;">Unplugged Ceremony</h3>
+                            <p style="line-height: 1.6; color: #555; font-size: 16px;">
+                                We have invited a team to help us capture our moment so please just be present and keep our ceremony camera free just until we say "I DO"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Gallery Section -->
+        <section id="gallery" class="spa-section" style="display:none;">
+            <section class="gallery-section">
+                <div class="container">
+                    <div class="gallery-slideshow-wrapper">
+                        <div class="slideshow-container">
+                            <div class="gallery-slideshow-bg"></div>
+                            <div class="gallery-overlay"></div>
+                            <div class="slide active">
+                                <img src="assets/images/JUN00079.jpg" alt="Wedding Photo 1">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00094.jpg" alt="Wedding Photo 2">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00414.jpg" alt="Wedding Photo 3">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00513.jpg" alt="Wedding Photo 4">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00580.jpg" alt="Wedding Photo 5">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00588.jpg" alt="Wedding Photo 6">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00620.jpg" alt="Wedding Photo 7">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00657.jpg" alt="Wedding Photo 8">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00745.jpg" alt="Wedding Photo 9">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00761-1.jpg" alt="Wedding Photo 10">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00804.jpg" alt="Wedding Photo 11">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00807.jpg" alt="Wedding Photo 12">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN00827.jpg" alt="Wedding Photo 13">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09126.jpg" alt="Wedding Photo 14">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09150.jpg" alt="Wedding Photo 15">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09179.jpg" alt="Wedding Photo 16">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09191.jpg" alt="Wedding Photo 17">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09265-1.jpg" alt="Wedding Photo 18">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09272.jpg" alt="Wedding Photo 19">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09340.jpg" alt="Wedding Photo 20">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09366.jpg" alt="Wedding Photo 21">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09378.jpg" alt="Wedding Photo 22">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09397.jpg" alt="Wedding Photo 23">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09411.jpg" alt="Wedding Photo 24">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09501.jpg" alt="Wedding Photo 25">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09596.jpg" alt="Wedding Photo 26">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09631.jpg" alt="Wedding Photo 27">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09685.jpg" alt="Wedding Photo 28">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09826.jpg" alt="Wedding Photo 29">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09829.jpg" alt="Wedding Photo 30">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09861.jpg" alt="Wedding Photo 31">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09922.jpg" alt="Wedding Photo 32">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/JUN09939.jpg" alt="Wedding Photo 33">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/YRB03197.jpg" alt="Wedding Photo 34">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/YRB03256.jpg" alt="Wedding Photo 35">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/YRB03263.jpg" alt="Wedding Photo 36">
+                            </div>
+                            
+                            
+                            <!-- Dots indicator -->
+                            <div class="slideshow-dots">
+                                <span class="dot active" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                                <span class="dot" onclick="currentSlide(6)"></span>
+                                <span class="dot" onclick="currentSlide(7)"></span>
+                                <span class="dot" onclick="currentSlide(8)"></span>
+                                <span class="dot" onclick="currentSlide(9)"></span>
+                                <span class="dot" onclick="currentSlide(10)"></span>
+                                <span class="dot" onclick="currentSlide(11)"></span>
+                                <span class="dot" onclick="currentSlide(12)"></span>
+                                <span class="dot" onclick="currentSlide(13)"></span>
+                                <span class="dot" onclick="currentSlide(14)"></span>
+                                <span class="dot" onclick="currentSlide(15)"></span>
+                                <span class="dot" onclick="currentSlide(16)"></span>
+                                <span class="dot" onclick="currentSlide(17)"></span>
+                                <span class="dot" onclick="currentSlide(18)"></span>
+                                <span class="dot" onclick="currentSlide(19)"></span>
+                                <span class="dot" onclick="currentSlide(20)"></span>
+                                <span class="dot" onclick="currentSlide(21)"></span>
+                                <span class="dot" onclick="currentSlide(22)"></span>
+                                <span class="dot" onclick="currentSlide(23)"></span>
+                                <span class="dot" onclick="currentSlide(24)"></span>
+                                <span class="dot" onclick="currentSlide(25)"></span>
+                                <span class="dot" onclick="currentSlide(26)"></span>
+                                <span class="dot" onclick="currentSlide(27)"></span>
+                                <span class="dot" onclick="currentSlide(28)"></span>
+                                <span class="dot" onclick="currentSlide(29)"></span>
+                                <span class="dot" onclick="currentSlide(30)"></span>
+                                <span class="dot" onclick="currentSlide(31)"></span>
+                                <span class="dot" onclick="currentSlide(32)"></span>
+                                <span class="dot" onclick="currentSlide(33)"></span>
+                                <span class="dot" onclick="currentSlide(34)"></span>
+                                <span class="dot" onclick="currentSlide(35)"></span>
+                                <span class="dot" onclick="currentSlide(36)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-grid">
+                        <img src="assets/images/JUN00079.jpg" alt="Couple photo 1">
+                        <img src="assets/images/JUN00807.jpg" alt="Couple photo 3">
+                        <img src="assets/images/JUN09378.jpg" alt="Couple photo 4">
+                        <img src="assets/images/JUN09265-1.jpg" alt="Couple photo 5">
+                        <img src="assets/images/JUN09685.jpg" alt="Couple photo 6">
+                        <img src="assets/images/JUN09191.jpg" alt="Couple photo 7">
+                        <img src="assets/images/JUN09861.jpg" alt="Couple photo 8">
+                        <img src="assets/images/YRB03263.jpg" alt="Couple photo 9">
+                        <img src="assets/images/YRB03197.jpg" alt="Couple photo 10">
+                        <img src="assets/images/JUN00657.jpg" alt="Couple photo 12">
+                        <!-- More images... -->
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Entourage & Invitation Section -->
+        <section id="entourage-invite" class="spa-section" style="display:none;">
+            <div class="container">
+                <div class="entourage-invite-gallery">
+                    <img src="assets/images/Invitation card.jpg" alt="Invitation Card" class="entourage-invite-img">
+                    <img src="assets/images/entourage.jpg" alt="Entourage" class="entourage-invite-img">
+                </div>
+            </div>
+        </section>
+        <!-- RSVP Section -->
+        <section id="rsvp" class="spa-section" style="display:none;">
+            <section class="rsvp-section">
+                <div class="container">
+                    <h2>RSVP</h2>
+                    <p>We hope you can join us for our special day!</p>
+                    <div class="rsvp-form-embed" style="max-width:700px;width:95vw;height:80vh;margin:40px auto 0 auto;">
+                        <iframe src="https://forms.gle/vTrmaymJ7SrtUn3ZA" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" style="border-radius:12px;min-height:500px;background:#fff;">Loading…</iframe>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>Jhon Dave & Eonna's Wedding</p>
+                <div class="footer-links">
+                    <a href="https://www.facebook.com/profile.php?id=61578582530221"><i class="fab fa-facebook"></i></a>
+                </div>
+                <p class="copyright">© Cache the Date. All rights reserved.</p>
+            </div>
+        </footer>
+        <audio id="weddingAudio" loop>
+          <source src="assets/music/bawat daan.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        
+        <button id="musicToggle" class="music-control">
+          <span id="musicIcon">▶</span>
+        </button>
+    </div>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
