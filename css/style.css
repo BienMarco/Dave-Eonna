@@ -2359,6 +2359,9 @@ footer p {
   .spa-section {
     padding-top: 0 !important;
   }
+  .invitation-text h2 {
+    margin-top: 40px !important;
+  }
 }
 @media (max-width: 480px) {
   .spa-section .invitation-text {
@@ -2368,5 +2371,8 @@ footer p {
   }
   .spa-section {
     padding-top: 0 !important;
+  }
+  .invitation-text h2 {
+    margin-top: 30px !important;
   }
 }
