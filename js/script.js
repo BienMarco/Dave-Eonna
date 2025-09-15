@@ -311,7 +311,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let current = 0;
         const slideshow = document.querySelector('.hero-slideshow');
         if (!slideshow) return;
-        
         // Create slide elements
         images.forEach((src, index) => {
             const slideDiv = document.createElement('div');
@@ -320,18 +319,19 @@ document.addEventListener('DOMContentLoaded', function() {
             if (index === 0) slideDiv.classList.add('active');
             slideshow.appendChild(slideDiv);
         });
-        
         // Preload images
         images.forEach(src => { const img = new Image(); img.src = src; });
-        
         function showNext() {
             const slides = slideshow.querySelectorAll('.slide-bg');
             slides[current].classList.remove('active');
             current = (current + 1) % images.length;
             slides[current].classList.add('active');
         }
-        
-        setInterval(showNext, 3000);
+        // Show the first image for 5 seconds, then every 3 seconds
+        setTimeout(function() {
+            showNext();
+            setInterval(showNext, 3000);
+        }, 5000);
     })();
     
     // Gallery Slideshow
