@@ -412,6 +412,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
         setInterval(showNextGallery, 3000);
     })();
+
+    // Make pastel circles clickable on iOS
+    document.querySelectorAll('.pastel-circle').forEach(function(circle) {
+        circle.addEventListener('touchstart', function(e) {
+            // This empty handler enables tap on iOS
+        });
+    });
 });
 
 // Slideshow functions
