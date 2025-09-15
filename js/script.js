@@ -301,9 +301,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'assets/images/YRB03263.jpg',
             'assets/images/JUN09685-1.jpg',
             'assets/images/JUN00657-1.jpg',
-            'assets/images/JUN09150.jpg',
             'assets/images/JUN00807.jpg',
-            'assets/images/JUN09501-1.jpg',
+            'assets/images/JUN09340.jpg',
+            'assets/images/JUN09501.jpg',
             'assets/images/JUN00414.jpg',
             'assets/images/JUN09366-1.jpg',
             'assets/images/JUN00588.jpg'
