@@ -2371,6 +2371,16 @@ footer p {
     aspect-ratio: 3/4 !important;
   }
 }
+/* Ensure Ninang images stack on mobile (override inline row flex) */
+@media (max-width: 700px) {
+  .attire-images > div > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+}
 @media (max-width: 700px) {
   .splash-names {
     display: flex;
