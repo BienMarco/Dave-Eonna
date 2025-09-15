@@ -1418,10 +1418,16 @@ footer p {
   box-shadow: 0 2px 8px rgba(212,175,55,0.10);
   font-size: 1rem;
   font-family: 'Playfair Display', serif;
-  white-space: nowrap;
+  white-space: pre-line;
+  max-width: 260px;
+  min-width: 120px;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s, bottom 0.2s;
+  z-index: 10;
 }
 .pastel-circle:hover .color-tooltip {
   display: block;
