@@ -1457,7 +1457,7 @@ footer p {
 
 .attire-images .attire-img {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   min-width: 100px;
   height: 400px;
   aspect-ratio: 3/4;
@@ -2204,6 +2204,17 @@ footer p {
   }
 }
 
+@media (min-width: 901px) {
+  img[alt="Attire for Men"],
+  img[alt="Attire for Women"] {
+    max-width: 340px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
 @media (min-width: 900px) {
   .venues-grid {
     display: flex !important;
@@ -2291,7 +2302,7 @@ footer p {
 }
 @media (max-width: 900px) {
   .attire-images .attire-img {
-    height: 320px !important;
+    height: 380px !important;
     aspect-ratio: 3/4 !important;
   }
 }
@@ -2408,4 +2419,13 @@ footer p {
   .invitation-text h2 {
     margin-top: 30px !important;
   }
+}
+.aesthetic-line {
+  border: none;
+  height: 4px;
+  width: 120px;
+  margin: 0 auto 24px auto;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #A1BFDD 0%, #ffffff 50%, #A1BFDD 100%);
+  opacity: 0.85;
 }
