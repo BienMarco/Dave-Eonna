@@ -298,15 +298,15 @@ document.addEventListener('DOMContentLoaded', function() {
     (function() {
         const images = [
             'assets/images/JUN00079.jpg',
-            'assets/images/JUN00094.jpg',
+            'assets/images/YRB03263.jpg',
+            'assets/images/JUN09685-1.jpg',
+            'assets/images/JUN00657-1.jpg',
+            'assets/images/JUN09150-1.jpg',
+            'assets/images/JUN00807.jpg',
+            'assets/images/JUN09501.jpg',
             'assets/images/JUN00414.jpg',
-            'assets/images/JUN00513.jpg',
-            'assets/images/JUN00580.jpg',
-            'assets/images/JUN00588.jpg',
-            'assets/images/JUN00620.jpg',
-            'assets/images/JUN00657.jpg',
-            'assets/images/JUN00745.jpg',
-            'assets/images/JUN00761-1.jpg'
+            'assets/images/JUN09366-1.jpg',
+            'assets/images/JUN00588.jpg'
         ];
         let current = 0;
         const slideshow = document.querySelector('.hero-slideshow');
