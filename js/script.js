@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Hero slideshow background with fade effect
     (function() {
         const images = [
-            'assets/images/JUN00079.jpg',
+            'assets/images/JUN00094.jpg',
             'assets/images/YRB03263.jpg',
             'assets/images/JUN09685-1.jpg',
             'assets/images/JUN00657-1.jpg',
@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Gallery Background Slideshow with fade effect
     (function() {
         const galleryImages = [
-            'assets/images/JUN00079.jpg',
+            'assets/images/JUN00094.jpg',
             'assets/images/JUN00094.jpg',
             'assets/images/JUN00414.jpg',
             'assets/images/JUN00513.jpg',
